@@ -7,8 +7,16 @@ This algorithm allows to resample the 333meters Copernicus Products to 1Km prese
 
 ## How to install
 
-A geoprocessing script was implemented for QGIS 3.x.  
-The reason behind the choice to develop a new script instead of a QGIS Plugin is that it is known that PyQGIS scripts are the best way to perform tasks within QGIS (Sherman G., 2018). It is possible to use a PyQGIS script in a workflow or in a graphical modeler or to integrate it in a specific plugin. In this case, a geoprocessing tool is more flexible and it can be adapted to each need.  
+It is possible to download the plugin directly from QGIS Repository.
+In order to use it **it is mandatory to install boto3 library**.  
+To install Boto3, open the osgeo4W shell and run:
+
+```
+py3_env.bat 
+pip install boto3
+```
+
+Instead of the plugin, it is possible to use the tool as geoprocessing script
 
 In order to install these tools, download the repository and open QGIS 3.x.  
 Under the Scripts dropdown menu on the top of the Processing toolbox, select **Add script to Toolbox** and then browse to the repository and select the *.py* files.  
